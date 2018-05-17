@@ -1,0 +1,65 @@
+﻿body {
+    height: 100%;
+    margin: 0;
+    color: darkgray;
+    text-align: center;
+    width: 100%;
+    font-family: 'Audiowide', cursive
+}
+
+#welcomenav {
+    border: medium padding: 5px 10px
+}
+
+#introduction {
+    padding: 250px 0;
+    margin: 30px;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p1821a-m-1699x20001a.png");
+    background-size: contain
+}
+
+//headers for each page will be here// #homepage {
+    font-weight: bold
+}
+
+#conclusion {
+    color: purple;
+    font-weight: bold
+}
+
+#aboutmaya {
+    font-family: 'Space Mono', monospace;
+    color: purple
+}
+
+#contactme {
+    color: blue;
+    background-image: https://www.nasa.gov/sites/default/files/rosetta20140117_1.jpg;
+    background-size: contain;
+    padding: 250px;
+    margin: 30px; 
+}
+
+
+//text content, like paragraphs, lists, etc. for each page will be here// #aboutme {
+    font-family: 'Space Mono', monospace;
+    color: yellow
+}
+
+#mayasinfo {
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/9460965180_e5246a9e56_o.jpg);
+    background-size: contain;
+    padding: 250px 0;
+    margin: 30px;
+    color: yellow
+}
+
+#fivefacts h2 {
+    color: SkyBlue
+}
+
+#favebooks h2 {
+    color: orange
+}
