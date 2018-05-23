@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
+<body>
     <head>
         <div id='welcomenav'>
             <a href="./index.html">Welcome</a>
@@ -12,25 +12,55 @@
             <a href="./contact.html">Contact</a>
         </div>
 
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link href="https://fonts.googleapis.com/css?family=Audiowide|Space+Mono:700" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Armata|Mina|Unica+One" rel="stylesheet">
         <title>Let's Keep in Touch</title>
     </head>
-    <body>
-        <div class="container">
-                <h2>Planet M9Y9</h2>
-            
-            <div id="linkedin">  
-                <p> Please free to connect with me on <a>href="https://www.linkedin.com/in/mayaparnell/"LinkedIn!</a></p>
-                </div>
-            
-        <div id='contactme'>
-            //A form for user input was supposed to be placed here. :( )//
-
-           <h1>Contact Me</h1>
-            
-
 </body>
+
+<div id="pageheader">
+    <h1>Planet M9Y9</h1>
+</div>
+
+<div id="linkedin">
+    <p>
+        Please free to connect with me on <a href=https://www.linkedin.com/in/mayaparnell>LinkedIn</a>!
+    </p>
+</div>
+
+<div id=contactme>
+    <h2>Contact Me</h2>
+</div>
+
+<div class="contactform">
+    <form>
+        <label for="username">Your Name</label>
+        <br>
+        <input type="text" id="username" name="yourname" placeholder="Your Full Name..">
+        <br>
+        <label for="email">Email Address </label>
+        <br>
+        <input type="text" id="email" name="contactinfo" placeholder="Email Address">
+        <br>
+        <label for="siterating">What do you think of the site?</label>
+        <br>
+        <select id="rate" name="userrating">
+            <option value="3">Pretty Good</option>
+            <option value="2">Average</option>
+            <option value="1">Needs Work</option>
+        </select>
+
+        <br>
+        <br>
+        <textarea rows="4" cols="50">
+Please share anything you'd like here... 
+</textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
 </html>
+
