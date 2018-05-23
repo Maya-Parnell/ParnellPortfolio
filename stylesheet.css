@@ -1,65 +1,395 @@
-﻿body {
+body {
     height: 100%;
     margin: 0;
-    color: darkgray;
+    color: rgb(22, 19, 5);
     text-align: center;
     width: 100%;
-    font-family: 'Audiowide', cursive
+    font-family: 'Unica One', cursive;
+    background-color: rgb(249, 139, 95)
 }
 
-#welcomenav {
-    border: medium padding: 5px 10px
+
+#pageheader h1 {
+    font-family: 'Unica One', cursive;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    border: 5px solid white;
+    border-right: 1px solid rgb(249, 139, 95);
+    border-left: 1px solid rgb(249, 139, 95);
+    background-color: black;
+    padding: 20px 20px
 }
+
+
+#welcomenav {
+    padding: 20px 20px
+}
+
+    #welcomenav a {
+        margin-right: 30px;
+        padding: 8px 18px;
+        border: 1px solid #204156;
+        background-color: rgb(255, 239, 107);
+        color: black;
+        text-decoration: none
+    }
+
+        #welcomenav a:hover {
+            background-color: rgb(255, 183, 189)
+        }
+
+
+#aboutmenav {
+    padding: 20px 20px
+}
+
+    #aboutmenav a {
+        margin-right: 30px;
+        padding: 8px 18px;
+        border: 1px solid #204156;
+        background-color: rgb(255, 183, 189);
+        color: black;
+        text-decoration: none
+    }
+
+        #aboutmenav a:hover {
+            background-color: rgb(45, 215, 196)
+        }
+
+
+#contactnav {
+    padding: 20px 20px
+}
+
+    #contactnav a {
+        margin-right: 30px;
+        padding: 8px 18px;
+        border: 1px solid #204156;
+        background-color: rgb(45, 215, 196);
+        color: black;
+        text-decoration: none
+    }
+
+        #contactnav a:hover {
+            background-color: rgb(255, 239, 107)
+        }
+
+
+/*Welcome Page*/
 
 #introduction {
     padding: 250px 0;
     margin: 30px;
     color: white;
-    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    font-family: 'Unica One', cursive;
     background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p1821a-m-1699x20001a.png");
     background-size: contain
 }
 
-//headers for each page will be here// #homepage {
-    font-weight: bold
+.photolink {
+    font-size: 18px
 }
 
-#conclusion {
-    color: purple;
-    font-weight: bold
+    .photolink a:link {
+        color: black;
+      	text-decoration: none;
+    }
+
+    .photolink a:hover {
+        color: lime
+    }
+
+.hello {
+    font-family: 'Mina', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid white;
+    background-color: white
 }
 
-#aboutmaya {
-    font-family: 'Space Mono', monospace;
+
+#homepage {
+    font-weight: bold;
+    color: white
+}
+
+#btmlink1 {
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
+    border: 5px solid white;
+    border-right: 1px solid rgb(249, 139, 95);
+    border-left: 1px solid rgb(249, 139, 95)
+}
+
+
+/*Photo Gallery*/
+
+.photogallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-tag {
+  margin: 16px;
+  border: 5px solid #fff;
+  box-shadow: 10px 10px 5px darkgray;
+  border-radius: 3px;
+}
+
+
+
+/*About Me Page*/
+
+.nav {
+    margin: 15px
+}
+
+
+/*Style of Page Nav Links - CLASS*/
+
+.toplink {
+    font-size: 18px;
+}
+
+.midlink {
+    font-size: 18px;
+}
+
+.btmlink {
+    font-size: 18px;
+}
+
+
+/*Style of Page Nav Links - ID*/
+
+#toplink {
+    padding: 10px 10px;
+    margin: 20px 20px;
+}
+
+#midlink {
+    padding: 10px 10px;
+    margin: 20px 20px;
+}
+
+#btmlink {
+    padding: 10px 10px;
+    margin: 20px 20px;
+}
+
+
+/*Hover Links for Page - unvisited links*/
+
+.toplink a:link {
+    color: black;
+  	text-decoration: none;
+    
+}
+
+.midlink a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.btmlink a:link {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*visited links*/
+
+.toplink a:visited {
     color: purple
 }
 
-#contactme {
-    color: blue;
-    background-image: https://www.nasa.gov/sites/default/files/rosetta20140117_1.jpg;
-    background-size: contain;
-    padding: 250px;
-    margin: 30px; 
+.midlink a:visited {
+    color: purple
+}
+
+.btmlink a:visited {
+    color: purple
 }
 
 
-//text content, like paragraphs, lists, etc. for each page will be here// #aboutme {
-    font-family: 'Space Mono', monospace;
-    color: yellow
+/*mouse over links*/
+.toplink a:hover {
+    color: lime
 }
 
-#mayasinfo {
+.midlink a:hover {
+    color: lime
+}
+
+.btmlink a:hover {
+    color: lime
+}
+
+
+/*selected links*/
+
+.toplink a:active {
+    color: red
+}
+
+.midlink a:active {
+    color: red
+}
+
+.btmlink a:active {
+    color: red
+}
+
+
+.mayasinfo {
     background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/9460965180_e5246a9e56_o.jpg);
     background-size: contain;
     padding: 250px 0;
     margin: 30px;
-    color: yellow
+    color: white
 }
 
-#fivefacts h2 {
-    color: SkyBlue
+    .mayasinfo h1 {
+        font-family: 'Unica One', cursive;
+        color: white;
+        font-style: bold;
+        font-size: 40px
+    }
+
+    .mayasinfo h4 {
+        font-family: 'Mina', sans-serif;
+        font-style: bold;
+        color: yellow;
+        padding-top: 15px
+    }
+
+    .mayasinfo p {
+        font-family: 'Mina', sans-serif;
+        color: black;
+        border: 2px solid black;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        background-color: white;
+        padding: 11px 11px
+    }
+
+#gclink {
+  text-decoration: none;
 }
+
+#gclink:hover {
+  color: rgb(242, 97, 62);
+}
+
+#conclusion {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center
+}
+
+
+#fivefacts {
+    background-color: black;
+    padding: 10px 10px;
+    border: 5px solid white;
+    border-right: 1px solid rgb(249, 139, 95);
+    border-left: 1px solid rgb(249, 139, 95)
+}
+
+    #fivefacts h2 {
+        color: rgb(255, 239, 107);
+        font-size: 26px;
+        text-align: center
+    }
+
+    #fivefacts ol {
+        font-family: 'Mina', sans-serif;
+        text-align: center;
+        font-size: 17px;
+        color: white
+    }
+
+
 
 #favebooks h2 {
-    color: orange
+    color: rgb(45, 215, 196);
+    font-size: 26px
 }
+
+#favebooks ul {
+    font-family: 'Mina', sans-serif
+}
+
+
+
+
+
+/*Contact Me Page*/
+
+#linkedin p {
+    font-size: 18px
+}
+
+#linkedin a {
+    text-decoration: none
+}
+
+    #linkedin a:hover {
+        color: rgb(45, 215, 196);
+        font-size: 18px
+    }
+
+#contactme {
+    color: white;
+    font-size: 24px
+}
+
+.contactform {
+    font-family: 'Mina', sans-serif;
+    background-image: url(https://www.nasa.gov/sites/default/files/rosetta20140117_1.jpg);
+    border: 2px solid black;
+    align-items: center
+}
+
+    .contactform label {
+        color: white
+    }
+
+    .contactform input[type=text], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px auto;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 4px;
+        box-sizing: border-box
+    }
+
+    .contactform input[type=submit] {
+        width: 50%;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer
+    }
+
+    .contactform input[type=submit] {
+        background-color: black;
+        font-family: 'Unica One', cursive;
+        font-size: 18px
+    }
+
+        .contactform input[type=submit]:hover {
+            background-color: lime;
+            font-size: 18px
+        }
+
